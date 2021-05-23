@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+}
+
+.imagenes{
+    position: relative;
+    margin: 20px 20px  0px 20px;
+}
+
+.modal{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal video{
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+.cerrar{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.play{
+    position:absolute;
+    left: 50%;
+    top: 40%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.texto h1{
+    margin-bottom: 1rem;
+    
+}
+
+.texto p{
+    color: #757575;
+}
+
+
+/* ==============================Pantalla Sm ============================================ */
+
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal video{
+        max-width: 90%;
+    }
+
+    .play{
+        left: 45%;
+    }
+
+    .tormenta{
+        width:100%;
+        height: 100%;
+    }
+
+    .texto{
+        padding-bottom: 2rem;
+    }
+
+    .texto h1{
+    font-size: 30px;   
+    }
+
+    .texto p{
+    font-size: 20px;
+    }
+
+    }
+
+/* ==============================Pantalla Extra Sm ============================================ */
+
+@media (max-width: 576px){
+    .modal video{
+        max-width: 80%;
+    }
+
+    .texto h1{
+    font-size: 20px;   
+    }
+
+    .texto p{
+    font-size: 14px;
+    }
+
+}

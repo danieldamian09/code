@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="imagenes">
+            <img src="./img/tormenta.jpg"  class="tormenta" alt="foto de tormenta electrica">
+                <a href="#" id="boton" class="boton" onclick="toggle();"><img src="./img/play.png" class="play" width="50" height="50" alt="boton play"></a>
+                <div class="modal" id="modal">
+                    <video id="video" src="./video/Storm - 40581.mp4" controls></video>
+                    <span class="cerrar" onclick="toggle();">&#10006;</span>
+                </div>
+        </div>
+        <div class="texto">
+            <h1>Una tormenta eléctrica es un fenómeno meteorológico caracterizado por la presencia de rayos y sus efectos sonoros.</h1>
+            <p>Las tormentas se crean cuando un centro de baja presión se desarrolla con un sistema de alta presión que lo rodea. ​ Esta
+            combinación de fuerzas opuestas puede crear vientos y resultar en la formación de nubes de tormenta, como el
+            cumulonimbus. Las tormentas son una manera de que la atmósfera libere energía. Cuando el aire cálido y húmedo se encuentra con aire
+            más frío y seco, el aire más cálido se eleva, el vapor de agua se condensa en la atmósfera y forma una nube. A medida
+            que el vapor de agua se condensa, libera calor, que es una forma de energía.</p>
+        </div>
+    </div>
+
+    <script src="./main/main.js"></script>
+</body>
+</html>
